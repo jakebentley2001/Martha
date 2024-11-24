@@ -2,9 +2,12 @@ After doing some research I have found several interesting items to think about
 
 Datasets:
     - Food 101 
+    - Roboflow Food Ingredients dataset: 4,196 images 120 ingredient classes: https://universe.roboflow.com/food-recipe-ingredient-images-0gnku/food-ingredients-dataset/dataset/4
+    - I think this is food segmentation data https://huggingface.co/datasets/EduardoPacheco/FoodSeg103
 
 
 Systems
+    We probably want to go with a system that does the segmentations in which it finds items that could be food. Then implemenet another model that takes the images that were in the bounding box and classifies them. This paper talks about how this could be a good approach: https://arxiv.org/pdf/1604.07953
     - Segmentations
     
     - Classification
